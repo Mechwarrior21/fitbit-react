@@ -1,0 +1,448 @@
+.main-container {
+  background: #fff;
+  overflow: hidden;
+  box-sizing: content-box;
+  max-width: 1300px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.main-container * {
+  box-sizing: content-box;
+  outline: 0;
+}
+
+.main-container img {
+  max-width: none;
+}
+
+#container .app-slider {
+  background: #FAFAFA;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+#container .app-slider h1 {
+  color: #006BA6;
+  font-family: "Proxima Nova Light",Arial,sans-serif;
+  font-size: 40px;
+}
+
+@media (max-width: 1024px) {
+  #container .app-slider h1 {
+    font-size: 27px;
+  }
+}
+
+#container .app-slider h2 {
+  color: #000;
+  font-family: "Proxima Nova Bold",Arial,sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+  #container .app-slider h2 {
+    font-size: 15px;
+  }
+}
+
+#container .app-slider p {
+  color: #576569;
+  font-family: "Proxima Nova Regular",Arial,sans-serif;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  #container .app-slider p {
+    font-size: 12px;
+  }
+}
+
+#container .app-slider * {
+  box-sizing: border-box;
+}
+
+#container .app-slider h1 {
+  max-width: 80%;
+  margin: auto;
+  font-size: 36px;
+  color: #000;
+}
+
+@media (max-width: 1024px) {
+  #container .app-slider h1 {
+    font-size: 26px;
+  }
+}
+
+#container .app-slider h1 sup {
+  font-size: 10px;
+  vertical-align: top;
+  position: relative;
+  top: 18px;
+}
+
+#container .app-slider h2,
+#container .app-slider p {
+  color: #576569;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  #container .app-slider h2,
+  #container .app-slider p {
+    font-size: 14px;
+  }
+}
+
+#container .app-slider h2 {
+  text-transform: capitalize;
+}
+
+#container .app-slider p {
+  max-width: 425px;
+  margin: 5px auto 15px;
+}
+
+@media (max-width: 767px) {
+  #container .app-slider p {
+    max-width: 260px;
+  }
+}
+
+#container .app-slider a.cta:hover {
+  color: #939C9E;
+  text-decoration: none;
+}
+
+#container .app-slider .slick-list {
+  padding: 0 0 10px 0 !important;
+  width: 936px;
+  max-width: 90%;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+#container .app-slider .device-slider {
+  width: 100%;
+  margin: 90px auto 114px;
+  position: relative;
+  opacity: 0;
+  transition: all 2s;
+}
+
+#container .app-slider .device-slider.animation-ready {
+  opacity: 1;
+}
+
+#container .app-slider .device-slider.animation-ready .slide {
+  transition: all .6s;
+}
+
+#container .app-slider .device-slider::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -56px;
+  margin: auto;
+  width: 234px;
+  height: 478px;
+  background: url("images/device-border-d69df456933a42be810708d1034d2d2b.png") center no-repeat;
+  background-size: contain;
+  z-index: 10;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #container .app-slider .device-slider::before {
+    background: url("images/device-border-x2-0631a184873f9d170a10d84b6f36e9e0.png") center no-repeat;
+    background-size: contain;
+  }
+}
+
+#container .app-slider .device-slider .slick-track {
+  line-height: 370px;
+  height: 370px;
+}
+
+#container .app-slider .device-slider .slide {
+  display: inline-block;
+  vertical-align: middle;
+  background: green;
+  font-size: 60px;
+  text-align: center;
+  float: none;
+  width: 208px;
+  height: 277.5px;
+  line-height: 277.5px;
+}
+
+#container .app-slider .device-slider .slide:not(.slick-current) {
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
+  opacity: .8;
+}
+
+@media (max-width: 767px) {
+  #container .app-slider .device-slider .slide {
+    transition: none;
+  }
+}
+
+#container .app-slider .device-slider .slide.current-slide,
+#container .app-slider .device-slider .slide.sibling-slide {
+  height: 370px;
+  width: 208px;
+}
+
+#container .app-slider .device-slider .slide.device-guided-goals {
+  background: url("images/charge2-device-guided-goals-add329aa236007f053a2e132af0d6b38.jpg") center no-repeat;
+  background-size: contain;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #container .app-slider .device-slider .slide.device-guided-goals {
+    background: url("images/charge2-device-guided-goals-x2-4bd402b61d308a59a98a63397c113627.jpg") center no-repeat;
+    background-size: contain;
+  }
+}
+
+#container .app-slider .device-slider .slide.device-weight {
+  background: url("images/charge2-device-weight-367e107c7182e5e835373b5ae9fb611d.jpg") center no-repeat;
+  background-size: contain;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #container .app-slider .device-slider .slide.device-weight {
+    background: url("images/charge2-device-weight-x2-3dc29ca0b59d021b88ed6a805f96f8e4.jpg") center no-repeat;
+    background-size: contain;
+  }
+}
+
+#container .app-slider .device-slider .slide.device-sync {
+  background: url("images/charge2-device-sync-83a375aaed8251470085e4e5275e2713.jpg") center no-repeat;
+  background-size: contain;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #container .app-slider .device-slider .slide.device-sync {
+    background: url("images/charge2-device-sync-x2-f97f2588774d2507b6ac5fce09c77731.jpg") center no-repeat;
+    background-size: contain;
+  }
+}
+
+#container .app-slider .device-slider .slide.device-heartrate {
+  background: url("images/charge2-device-heartrate-e1a46fc21c358e54394d458b43f20969.jpg") center no-repeat;
+  background-size: contain;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #container .app-slider .device-slider .slide.device-heartrate {
+    background: url("images/charge2-device-heartrate-x2-dae3d9a98cccc8748d83f34b915a55e5.jpg") center no-repeat;
+    background-size: contain;
+  }
+}
+
+#container .app-slider .device-slider .slide.device-workouts {
+  background: url("images/charge2-device-workouts-4cb0b49195182225c00ac714267e2965.jpg") center no-repeat;
+  background-size: contain;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #container .app-slider .device-slider .slide.device-workouts {
+    background: url("images/charge2-device-workouts-x2-3ad7b0ae6ea95e045bb3b2e171806b7f.jpg") center no-repeat;
+    background-size: contain;
+  }
+}
+
+#container .app-slider .device-slider .slide.slide-position-1 {
+  background-position: center right !important;
+}
+
+#container .app-slider .device-slider .slide.slide-position-5 {
+  background-position: center left !important;
+}
+
+#container .app-slider .device-slider .slide.outlier-slide {
+  opacity: .6;
+}
+
+@media (max-width: 1024px) {
+  #container .app-slider .device-slider .slide.outlier-slide {
+    opacity: 0;
+  }
+}
+
+#container .app-slider .slick-arrow,
+#container .app-slider .slick-dots {
+  position: absolute;
+}
+
+#container .app-slider .slick-arrow {
+  background: #C3C8C9;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  border: 0;
+  color: transparent;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  #container .app-slider .slick-arrow {
+    display: none !important;
+  }
+}
+
+#container .app-slider .slick-arrow:hover {
+  background: #576569;
+}
+
+#container .app-slider .slick-arrow::after {
+  content: '';
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#container .app-slider .slick-arrow::before {
+  display: none;
+}
+
+#container .app-slider .slick-arrow.slick-next {
+  right: -50px;
+  text-align: left;
+}
+
+#container .app-slider .slick-arrow.slick-next::after {
+  width: 20px;
+  height: 20px;
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: -50px;
+}
+
+#container .app-slider .slick-arrow.slick-prev {
+  left: -50px;
+  text-align: right;
+}
+
+#container .app-slider .slick-arrow.slick-prev::after {
+  right: -50px;
+  width: 20px;
+  height: 20px;
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+#container .app-slider .slick-dots {
+  text-align: center;
+  bottom: -100px;
+  left: 0;
+  right: 0;
+}
+
+#container .app-slider .slick-dots li {
+  display: inline-block;
+  background-color: transparent;
+  color: transparent;
+  border: 2px solid #C3C8C9;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 10px;
+  box-sizing: border-box;
+  transition: all 80ms ease-out;
+}
+
+#container .app-slider .slick-dots li:hover {
+  border-color: #576569;
+}
+
+#container .app-slider .slick-dots li.slick-active {
+  background-color: #C3C8C9;
+  border-color: #C3C8C9;
+}
+
+#container .app-slider .slick-dots li.slick-active:hover {
+  border-color: #C3C8C9;
+}
+
+#container .app-slider .slick-dots li button {
+  visibility: hidden;
+}
+
+#container .app-slider .device-slider {
+  margin: 90px auto 140px;
+}
+
+#container .app-slider h1 {
+  color: #000;
+  line-height: 1.2;
+  max-width: none;
+}
+
+#container .app-slider h2 {
+  font-family: "Proxima Nova Semibold",Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000;
+}
+
+#container .app-slider p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px auto 25px;
+}
+
+@media (max-width: 1024px) {
+  #container .app-slider h1 {
+    font-size: 36px;
+  }
+
+  #container .app-slider h2 {
+    font-size: 18px;
+  }
+
+  #container .app-slider p {
+    font-size: 16px;
+  }
+
+  #container .app-slider a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  #container .app-slider h1 {
+    font: 28px "Proxima Nova Regular",Arial,sans-serif;
+  }
+
+  #container .app-slider h2 {
+    font-size: 16px;
+  }
+
+  #container .app-slider p {
+    color: #000;
+  }
+}
